@@ -110,7 +110,7 @@ public class Gameplay extends JPanel implements ActionListener, KeyListener {
 	}
 
 	@Override
-	public void keyPressed(KeyEvent e) {
+	public void keyPressed(KeyEvent e) { // Cheat
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			if(end != true) {
 				numOfBricks = 0;
@@ -134,7 +134,7 @@ public class Gameplay extends JPanel implements ActionListener, KeyListener {
 				moveRight();
 			}
 		}
-		if(e.getKeyCode ()==KeyEvent.VK_ENTER) {
+		if(e.getKeyCode ()==KeyEvent.VK_ENTER) { // Different Levels
 			if(end == true) {
 				score = 0;
 				x =3;
